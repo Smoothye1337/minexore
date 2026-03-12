@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MineXore – Roblox Crypto Trading</title>
+    <meta name="description"
+        content="MineXore – The only Roblox game where you trade crypto in a gritty underground empire. Trade, grow, dominate." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="noise-overlay"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <span class="logo-text">Mine<span class="accent">Xore</span></span>
+            <span class="logo-tag">ROBLOX</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">The Game</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#market">Market</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="https://www.roblox.com" target="_blank" class="nav-cta" id="nav-cta-btn">Play Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="particles"></div>
+        <div class="hero-bg-grid"></div>
+        <div class="scan-line"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                ROBLOX EXCLUSIVE • LIVE NOW
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">MINE</span>
+                <span class="title-line accent-line">XORE</span>
+            </h1>
+            <p class="hero-subtitle">The underground crypto empire. Trade on the streets, dominate the market, build
+                your kingdom — all <span class="accent-text">inside Roblox.</span></p>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="12847">0</span>
+                    <span class="stat-label">Active Traders</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="4200000">0</span>
+                    <span class="stat-label">Transactions</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="99">0</span>
+                    <span class="stat-label">% Uptime</span>
+                </div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="https://www.roblox.com" target="_blank" class="btn-primary" id="hero-play-btn">
+                    <span class="btn-icon">▶</span> Play Free
+                </a>
+                <a href="#about" class="btn-secondary" id="hero-learn-btn">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="ticker-wrap">
+                <div class="ticker-track" id="ticker">
+                    <span>₿ BTC +4.2%</span>
+                    <span>Ξ ETH +1.8%</span>
+                    <span>⬡ MINE +12.7%</span>
+                    <span>◎ SOL +3.1%</span>
+                    <span>◈ XOR +8.4%</span>
+                    <span>₿ BTC +4.2%</span>
+                    <span>Ξ ETH +1.8%</span>
+                    <span>⬡ MINE +12.7%</span>
+                    <span>◎ SOL +3.1%</span>
+                    <span>◈ XOR +8.4%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <div class="phone-header">
+                        <span>MineXore Exchange</span>
+                        <span class="phone-live">● LIVE</span>
+                    </div>
+                    <div class="phone-chart">
+                        <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#f5c518" stop-opacity="0.4" />
+                                    <stop offset="100%" stop-color="#f5c518" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                            <path
+                                d="M0,70 L20,55 L40,60 L60,40 L80,45 L100,25 L120,30 L140,15 L160,20 L180,8 L200,5 L200,80 L0,80 Z"
+                                fill="url(#chartGrad)" />
+                            <path d="M0,70 L20,55 L40,60 L60,40 L80,45 L100,25 L120,30 L140,15 L160,20 L180,8 L200,5"
+                                fill="none" stroke="#f5c518" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="phone-coins">
+                        <div class="coin-row">
+                            <span class="coin-sym">⬡ MINE</span>
+                            <span class="coin-price green">+12.7%</span>
+                        </div>
+                        <div class="coin-row">
+                            <span class="coin-sym">◈ XOR</span>
+                            <span class="coin-price green">+8.4%</span>
+                        </div>
+                        <div class="coin-row">
+                            <span class="coin-sym">₿ BTC</span>
+                            <span class="coin-price green">+4.2%</span>
+                        </div>
+                        <div class="coin-row">
+                            <span class="coin-sym">Ξ ETH</span>
+                            <span class="coin-price red">-1.3%</span>
+                        </div>
+                    </div>
+                    <div class="phone-btn">BUY NOW</div>
+                </div>
+            </div>
+            <div class="glow-orb"></div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-label">// ABOUT THE GAME</div>
+        <h2 class="section-title">Schedule 1 meets the <span class="accent-text">Crypto World</span></h2>
+        <p class="section-desc">MineXore is an underground Roblox experience where you call the shots. Start small,
+            trade smart, and build a crypto empire — while outplaying rivals and riding the market.</p>
+
+        <div class="about-cards">
+            <div class="about-card" id="about-card-1">
+                <div class="card-icon">⛏</div>
+                <h3>Mine & Trade</h3>
+                <p>Mine crypto with rigs scattered across the world, then sell at the best price to various NPC traders.
+                </p>
+            </div>
+            <div class="about-card featured" id="about-card-2">
+                <div class="card-glow"></div>
+                <div class="card-icon">📈</div>
+                <h3>Real Market Dynamics</h3>
+                <p>Prices shift in real time based on player demand. Time your buys and sells perfectly to maximize
+                    profit.</p>
+                <span class="card-tag">FEATURED</span>
+            </div>
+            <div class="about-card" id="about-card-3">
+                <div class="card-icon">🕵️</div>
+                <h3>Underground Network</h3>
+                <p>Team up with other traders, discover hidden markets, and outmaneuver rivals trying to crash your
+                    prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="features-bg"></div>
+        <div class="section-label">// FEATURES</div>
+        <h2 class="section-title">Everything you need for <span class="accent-text">Domination</span></h2>
+
+        <div class="features-grid">
+            <div class="feature-item" id="feat-1">
+                <div class="feature-num">01</div>
+                <div class="feature-content">
+                    <h3>Crypto Portfolio</h3>
+                    <p>Manage your own crypto portfolio. Diversify across multiple coins and maximize your profits.</p>
+                </div>
+            </div>
+            <div class="feature-item" id="feat-2">
+                <div class="feature-num">02</div>
+                <div class="feature-content">
+                    <h3>P2P Trading</h3>
+                    <p>Trade directly with other players. Negotiate prices, close deals, and build your reputation on
+                        the street.</p>
+                </div>
+            </div>
+            <div class="feature-item" id="feat-3">
+                <div class="feature-num">03</div>
+                <div class="feature-content">
+                    <h3>Mining Rigs</h3>
+                    <p>Place mining rigs across the map. Better locations yield more crypto per hour — location is
+                        everything.</p>
+                </div>
+            </div>
+            <div class="feature-item" id="feat-4">
+                <div class="feature-num">04</div>
+                <div class="feature-content">
+                    <h3>Market Manipulation</h3>
+                    <p>Pump & dump strategies, short selling, and other advanced techniques for experienced traders.</p>
+                </div>
+            </div>
+            <div class="feature-item" id="feat-5">
+                <div class="feature-num">05</div>
+                <div class="feature-content">
+                    <h3>Rank System</h3>
+                    <p>Start as a "Street Hustler" and grind your way to "Crypto Mogul". Every rank unlocks new
+                        opportunities.</p>
+                </div>
+            </div>
+            <div class="feature-item" id="feat-6">
+                <div class="feature-num">06</div>
+                <div class="feature-content">
+                    <h3>Weekly Contest</h3>
+                    <p>Compete for the most profit on weekly leaderboards. Top traders earn exclusive rewards and
+                        bragging rights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="market" id="market">
+        <div class="section-label">// LIVE MARKET</div>
+        <h2 class="section-title">The <span class="accent-text">Market</span> never sleeps</h2>
+
+        <div class="market-table">
+            <div class="market-header">
+                <span>Coin</span>
+                <span>Price</span>
+                <span>24h Change</span>
+                <span>Market Cap</span>
+                <span>Trend</span>
+            </div>
+            <div class="market-row" id="mrow-1">
+                <span class="market-coin"><span class="coin-badge mine">⬡</span> MineXore (MINE)</span>
+                <span class="market-price">₿ 0.00421</span>
+                <span class="market-change green">▲ +12.7%</span>
+                <span class="market-cap">2.4M</span>
+                <span class="market-sparkline up"></span>
+            </div>
+            <div class="market-row" id="mrow-2">
+                <span class="market-coin"><span class="coin-badge xor">◈</span> XoreToken (XOR)</span>
+                <span class="market-price">₿ 0.00188</span>
+                <span class="market-change green">▲ +8.4%</span>
+                <span class="market-cap">890K</span>
+                <span class="market-sparkline up"></span>
+            </div>
+            <div class="market-row" id="mrow-3">
+                <span class="market-coin"><span class="coin-badge btc">₿</span> Bitcoin (BTC)</span>
+                <span class="market-price">₿ 1.0000</span>
+                <span class="market-change green">▲ +4.2%</span>
+                <span class="market-cap">18.2M</span>
+                <span class="market-sparkline up"></span>
+            </div>
+            <div class="market-row" id="mrow-4">
+                <span class="market-coin"><span class="coin-badge eth">Ξ</span> Ethereum (ETH)</span>
+                <span class="market-price">₿ 0.0521</span>
+                <span class="market-change red">▼ -1.3%</span>
+                <span class="market-cap">7.1M</span>
+                <span class="market-sparkline down"></span>
+            </div>
+            <div class="market-row" id="mrow-5">
+                <span class="market-coin"><span class="coin-badge sol">◎</span> Solana (SOL)</span>
+                <span class="market-price">₿ 0.0032</span>
+                <span class="market-change green">▲ +3.1%</span>
+                <span class="market-cap">3.3M</span>
+                <span class="market-sparkline up"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="ranks" id="ranks">
+        <div class="section-label">// RANK SYSTEM</div>
+        <h2 class="section-title">How far will your <span class="accent-text">empire</span> go?</h2>
+        <div class="ranks-path">
+            <div class="rank-node" id="rank-1">
+                <div class="rank-icon">🧑‍🦯</div>
+                <div class="rank-name">Street Hustler</div>
+                <div class="rank-req">Starting rank</div>
+            </div>
+            <div class="rank-arrow">→</div>
+            <div class="rank-node" id="rank-2">
+                <div class="rank-icon">💼</div>
+                <div class="rank-name">Block Trader</div>
+                <div class="rank-req">10K profit</div>
+            </div>
+            <div class="rank-arrow">→</div>
+            <div class="rank-node" id="rank-3">
+                <div class="rank-icon">🏦</div>
+                <div class="rank-name">Crypto Baron</div>
+                <div class="rank-req">250K profit</div>
+            </div>
+            <div class="rank-arrow">→</div>
+            <div class="rank-node active" id="rank-4">
+                <div class="rank-icon">👑</div>
+                <div class="rank-name">Crypto Mogul</div>
+                <div class="rank-req">1M profit</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="section-label">// FAQ</div>
+        <h2 class="section-title">Questions & <span class="accent-text">Answers</span></h2>
+        <div class="faq-list">
+            <div class="faq-item" id="faq-1">
+                <button class="faq-question" aria-expanded="false">Is MineXore free to play?</button>
+                <div class="faq-answer">
+                    <p>Yes! MineXore is completely free on Roblox. Some cosmetic items can be purchased with Robux, but
+                        100% of the gameplay is available to everyone.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-2">
+                <button class="faq-question" aria-expanded="false">Are we trading real crypto?</button>
+                <div class="faq-answer">
+                    <p>No. The in-game crypto is a virtual currency within the game. MineXore brings the Schedule 1 vibe
+                        into the Roblox world — the experience is real, the currency is virtual.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-3">
+                <button class="faq-question" aria-expanded="false">How active is the community?</button>
+                <div class="faq-answer">
+                    <p>We have over 12,000 active traders on the server daily. Join our Discord too, where we share the
+                        latest strategies and market news.</p>
+                </div>
+            </div>
+            <div class="faq-item" id="faq-4">
+                <button class="faq-question" aria-expanded="false">What age is it recommended for?</button>
+                <div class="faq-answer">
+                    <p>MineXore follows Roblox platform guidelines and is recommended for players 13+. The game teaches
+                        basic financial and trading concepts in a fun, engaging way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+            <h2 class="cta-title">Ready for the <span class="accent-text">Underground Market?</span></h2>
+            <p class="cta-desc">Join thousands of traders and start building your crypto empire today.</p>
+            <a href="https://www.roblox.com" target="_blank" class="btn-primary large" id="cta-main-btn">
+                <span class="btn-icon">▶</span> Play on Roblox
+            </a>
+            <div class="cta-meta">Free • No download • Play instantly</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-logo">Mine<span class="accent">Xore</span></div>
+        <p class="footer-desc">We are not affiliated with Roblox Corporation. MineXore is developed by an independent
+            Roblox game team.</p>
+        <div class="footer-links">
+            <a href="#">Discord</a>
+            <a href="#">Twitter</a>
+            <a href="#">Roblox Profile</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <p class="footer-copy">© 2026 MineXore. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
